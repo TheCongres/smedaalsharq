@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
@@ -49,12 +48,12 @@ const Najeen = () => {
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 leading-tight rtl:leading-loose">
                   {t('pages.najeen')}
                 </h1>
-                <div className="w-24 h-1 bg-primary mx-auto lg:me-0 lg:ms-0 rtl:lg:me-auto rtl:lg:ms-0 mb-6"></div>
+                <div className="w-24 h-1 bg-primary mx-auto lg:me-0 lg:ms-0 rtl:lg:me-0 rtl:lg:ms-auto mb-6"></div>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 lg:mb-8 leading-relaxed text-center lg:text-start rtl:lg:text-end rtl:leading-loose">
                 {t('najeen.fullDescription')}
               </p>
-              <div className="flex justify-center lg:justify-start rtl:justify-end">
+              <div className="flex justify-center lg:justify-start rtl:lg:justify-end rtl:justify-end">
                 <Link to="/contact">
                   <Button size="lg" className="px-6 sm:px-8">
                     {t('contact.title')}

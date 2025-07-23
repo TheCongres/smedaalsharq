@@ -54,7 +54,7 @@ const Najeen = () => {
               <p className="text-base sm:text-lg text-muted-foreground mb-6 lg:mb-8 leading-relaxed text-center lg:text-start rtl:lg:text-end rtl:leading-loose">
                 {t('najeen.fullDescription')}
               </p>
-              <div className="text-center lg:text-start rtl:lg:text-end">
+              <div className="flex justify-center lg:justify-start rtl:lg:justify-end">
                 <Link to="/contact">
                   <Button size="lg" className="px-6 sm:px-8">
                     {t('contact.title')}

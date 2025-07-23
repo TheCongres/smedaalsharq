@@ -25,11 +25,11 @@ const Header = () => {
         <div className="flex h-28 items-center justify-between">
           {/* Logo Only */}
           <div className="flex items-center">
-            <Link to="/" className="p-2">
+            <Link to="/" className="p-2 group">
               <img 
                 src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/all.png" 
                 alt={t('company.name')} 
-                className="h-16 w-auto max-w-60 sm:h-20 sm:max-w-80 md:h-24 md:max-w-96 lg:h-28 lg:max-w-[400px]" 
+                className="h-18 w-auto max-w-60 sm:h-22 sm:max-w-80 md:h-26 md:max-w-96 lg:h-28 lg:max-w-[400px] transition-all duration-300 group-hover:scale-105 drop-shadow-lg group-hover:drop-shadow-xl" 
               />
             </Link>
           </div>

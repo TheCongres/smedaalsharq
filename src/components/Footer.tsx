@@ -14,11 +14,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex flex-col items-start mb-4">
-              <div className="rounded-lg p-1 shadow-md hover:shadow-lg transition-shadow">
+              <div className="rounded-lg px-1 border border-footer-foreground/10 hover:border-footer-foreground/20 transition-all duration-300">
                 <img 
                   src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/all.png" 
                   alt={t('company.name')} 
-                  className="h-20 w-auto max-w-60 sm:h-24 sm:max-w-80 md:h-28 md:max-w-[400px]" 
+                  className="h-16 w-auto max-w-48 sm:h-18 sm:max-w-64 md:h-20 md:max-w-80 lg:h-22 lg:max-w-96 transition-all duration-300 hover:scale-102" 
                 />
               </div>
             </div>

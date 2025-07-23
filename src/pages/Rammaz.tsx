@@ -50,7 +50,7 @@ const Rammaz = () => {
                 </h1>
                 <div className="w-24 h-1 bg-primary mx-auto lg:me-0 lg:ms-0 rtl:lg:me-0 rtl:lg:ms-auto mb-6"></div>
               </div>
-              <p className="text-base sm:text-lg text-muted-foreground mb-6 lg:mb-8 leading-relaxed text-center lg:text-start rtl:lg:text-end rtl:leading-loose">
+              <p className="text-base sm:text-lg text-muted-foreground mb-6 lg:mb-8 leading-relaxed text-center lg:text-start rtl:lg:text-right rtl:leading-loose">
                 {t('rammaz.fullDescription')}
               </p>
               <div className="flex justify-center lg:justify-start rtl:lg:justify-end rtl:justify-end">
@@ -93,7 +93,7 @@ const Rammaz = () => {
                 <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-2 sm:mb-3 rtl:leading-loose">
                   {service.title}
                 </h3>
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed rtl:leading-loose text-center rtl:text-center">
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed rtl:leading-loose text-center rtl:text-right">
                   {service.description}
                 </p>
               </Card>
@@ -105,10 +105,10 @@ const Rammaz = () => {
       {/* CTA Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 bg-muted/30">
         <div className="container mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 lg:mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 lg:mb-6 rtl:text-right">
             {t('rammaz.cta.title')}
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground mb-6 lg:mb-8 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground mb-6 lg:mb-8 max-w-2xl mx-auto rtl:text-right">
             {t('rammaz.cta.description')}
           </p>
           <Link to="/contact">

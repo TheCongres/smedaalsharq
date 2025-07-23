@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-6">
-              <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
                 <img 
                   src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/fin.png" 
                   alt={t('company.name')} 

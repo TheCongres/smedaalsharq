@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="flex items-center mb-6">
               <div className="bg-white rounded-lg p-3 shadow-sm">
                 <img 
-                  src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/smd.png" 
+                  src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/fin.png" 
                   alt={t('company.name')} 
                   className="h-10 w-auto max-w-48" 
                 />

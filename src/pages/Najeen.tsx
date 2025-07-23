@@ -42,19 +42,19 @@ const Najeen = () => {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <div className="text-center lg:text-left mb-6">
+              <div className="text-center lg:text-left rtl:lg:text-right mb-6">
                 <p className="text-sm sm:text-base text-primary font-medium mb-2">
                   {t('najeen.category')}
                 </p>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
                   {t('pages.najeen')}
                 </h1>
-                <div className="w-24 h-1 bg-primary mx-auto lg:mx-0 mb-6"></div>
+                <div className="w-24 h-1 bg-primary mx-auto lg:mx-0 rtl:lg:ml-auto rtl:lg:mr-0 mb-6"></div>
               </div>
-              <p className="text-base sm:text-lg text-muted-foreground mb-6 lg:mb-8 leading-relaxed text-center lg:text-left">
+              <p className="text-base sm:text-lg text-muted-foreground mb-6 lg:mb-8 leading-relaxed text-center lg:text-left rtl:lg:text-right">
                 {t('najeen.fullDescription')}
               </p>
-              <div className="text-center lg:text-left">
+              <div className="text-center lg:text-left rtl:lg:text-right">
                 <Link to="/contact">
                   <Button size="lg" className="px-6 sm:px-8">
                     {t('contact.title')}

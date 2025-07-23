@@ -43,7 +43,7 @@ const Services = () => {
                 <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-primary flex-shrink-0" />
                 <h3 className="text-xl lg:text-2xl font-bold text-foreground rtl:leading-loose">{t('najeen.title')}</h3>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base rtl:text-right rtl:leading-loose">
+              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base text-center rtl:text-center rtl:leading-loose">
                 {t('najeen.description')}
               </p>
               
@@ -77,7 +77,7 @@ const Services = () => {
                 <DoorOpen className="w-6 h-6 sm:w-8 sm:h-8 text-primary flex-shrink-0" />
                 <h3 className="text-xl lg:text-2xl font-bold text-foreground rtl:leading-loose">{t('sdood.title')}</h3>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base rtl:text-right rtl:leading-loose">
+              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base text-center rtl:text-center rtl:leading-loose">
                 {t('sdood.description')}
               </p>
 
@@ -111,7 +111,7 @@ const Services = () => {
                 <Monitor className="w-6 h-6 sm:w-8 sm:h-8 text-primary flex-shrink-0" />
                 <h3 className="text-xl lg:text-2xl font-bold text-foreground rtl:leading-loose">{t('rammaz.title')}</h3>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base rtl:text-right rtl:leading-loose">
+              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base text-center rtl:text-center rtl:leading-loose">
                 {t('rammaz.description')}
               </p>
 

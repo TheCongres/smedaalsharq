@@ -42,19 +42,19 @@ const Rammaz = () => {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="order-2 lg:order-1 rtl:lg:order-2">
-              <div className="text-center lg:text-start rtl:lg:text-right mb-6">
+              <div className="text-center lg:text-start rtl:lg:text-end mb-6">
                 <p className="text-sm sm:text-base text-primary font-medium mb-2">
                   {t('rammaz.category')}
                 </p>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 leading-tight rtl:leading-loose">
                   {t('pages.rammaz')}
                 </h1>
-                <div className="w-24 h-1 bg-primary mx-auto lg:mx-0 rtl:lg:mr-auto rtl:lg:ml-0 mb-6"></div>
+                <div className="w-24 h-1 bg-primary mx-auto lg:me-0 lg:ms-0 rtl:lg:me-auto rtl:lg:ms-0 mb-6"></div>
               </div>
-              <p className="text-base sm:text-lg text-muted-foreground mb-6 lg:mb-8 leading-relaxed text-center lg:text-start rtl:lg:text-right rtl:leading-loose">
+              <p className="text-base sm:text-lg text-muted-foreground mb-6 lg:mb-8 leading-relaxed text-center lg:text-start rtl:lg:text-end rtl:leading-loose">
                 {t('rammaz.fullDescription')}
               </p>
-              <div className="text-center lg:text-start rtl:lg:text-right">
+              <div className="text-center lg:text-start rtl:lg:text-end">
                 <Link to="/contact">
                   <Button size="lg" className="px-6 sm:px-8">
                     {t('contact.title')}
@@ -94,7 +94,7 @@ const Rammaz = () => {
                 <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-2 sm:mb-3 rtl:leading-loose">
                   {service.title}
                 </h3>
-                <p className="text-sm sm:text-base text-muted-foreground rtl:leading-relaxed rtl:text-right">
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed rtl:leading-loose text-center rtl:text-center">
                   {service.description}
                 </p>
               </Card>

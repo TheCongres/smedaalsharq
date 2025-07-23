@@ -22,14 +22,14 @@ const Header = () => {
   return (
     <header className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b border-border/40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           {/* Logo Only */}
           <div className="flex items-center">
-            <Link to="/">
+            <Link to="/" className="p-2">
               <img 
                 src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/fin.png" 
                 alt={t('company.name')} 
-                className="h-12 w-auto max-w-48 sm:h-14 sm:max-w-56" 
+                className="h-16 w-auto max-w-64 sm:h-20 sm:max-w-80" 
               />
             </Link>
           </div>

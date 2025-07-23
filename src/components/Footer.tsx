@@ -14,11 +14,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-6">
-              <div className="bg-white rounded-lg p-3 shadow-sm">
+              <div className="bg-white rounded-lg p-4 shadow-sm">
                 <img 
                   src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/fin.png" 
                   alt={t('company.name')} 
-                  className="h-14 w-auto max-w-64" 
+                  className="h-20 w-auto max-w-80" 
                 />
               </div>
             </div>

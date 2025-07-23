@@ -27,9 +27,9 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/" className="p-2 group">
               <img 
-                src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/all.png" 
+                src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/hh.png" 
                 alt={t('company.name')} 
-                className="h-18 w-auto max-w-60 sm:h-22 sm:max-w-80 md:h-26 md:max-w-96 lg:h-28 lg:max-w-[400px] transition-all duration-300 group-hover:scale-105 drop-shadow-lg group-hover:drop-shadow-xl" 
+                className="h-14 w-auto max-w-48 sm:h-16 sm:max-w-64 md:h-26 md:max-w-96 lg:h-28 lg:max-w-[400px] transition-all duration-300 group-hover:scale-105 drop-shadow-lg group-hover:drop-shadow-xl" 
               />
             </Link>
           </div>

@@ -39,11 +39,11 @@ const Services = () => {
               </div>
             </div>
             <div className="p-6 lg:p-8">
-              <div className="flex items-center space-x-3 rtl:space-x-reverse mb-4">
+              <div className="flex items-center gap-3 mb-4">
                 <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-primary flex-shrink-0" />
-                <h3 className="text-xl lg:text-2xl font-bold text-foreground">{t('najeen.title')}</h3>
+                <h3 className="text-xl lg:text-2xl font-bold text-foreground rtl:leading-loose">{t('najeen.title')}</h3>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base">
+              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base rtl:text-right rtl:leading-loose">
                 {t('najeen.description')}
               </p>
               
@@ -73,11 +73,11 @@ const Services = () => {
               </div>
             </div>
             <div className="p-6 lg:p-8">
-              <div className="flex items-center space-x-3 rtl:space-x-reverse mb-4">
+              <div className="flex items-center gap-3 mb-4">
                 <DoorOpen className="w-6 h-6 sm:w-8 sm:h-8 text-primary flex-shrink-0" />
-                <h3 className="text-xl lg:text-2xl font-bold text-foreground">{t('sdood.title')}</h3>
+                <h3 className="text-xl lg:text-2xl font-bold text-foreground rtl:leading-loose">{t('sdood.title')}</h3>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base">
+              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base rtl:text-right rtl:leading-loose">
                 {t('sdood.description')}
               </p>
 
@@ -107,11 +107,11 @@ const Services = () => {
               </div>
             </div>
             <div className="p-6 lg:p-8">
-              <div className="flex items-center space-x-3 rtl:space-x-reverse mb-4">
+              <div className="flex items-center gap-3 mb-4">
                 <Monitor className="w-6 h-6 sm:w-8 sm:h-8 text-primary flex-shrink-0" />
-                <h3 className="text-xl lg:text-2xl font-bold text-foreground">{t('rammaz.title')}</h3>
+                <h3 className="text-xl lg:text-2xl font-bold text-foreground rtl:leading-loose">{t('rammaz.title')}</h3>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base">
+              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base rtl:text-right rtl:leading-loose">
                 {t('rammaz.description')}
               </p>
 

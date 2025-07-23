@@ -1,4 +1,3 @@
-
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Shield, DoorOpen, Monitor } from 'lucide-react';
@@ -21,15 +20,17 @@ const Services = () => {
           <div className="w-24 h-1 bg-primary mx-auto mt-6"></div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {/* NAJEEN Services */}
           <Card id="najeen" className="overflow-hidden group">
-            <div className="aspect-video relative overflow-hidden">
-              <img 
-                src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/n.png" 
-                alt="NAJEEN Safety Services" 
-                className="w-full h-48 md:h-56 lg:h-64 object-contain bg-white/5 group-hover:scale-105 transition-transform duration-300"
-              />
+            <div className="relative overflow-hidden">
+              <div className="aspect-[4/3] w-full">
+                <img 
+                  src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/n.png" 
+                  alt="NAJEEN Safety Services" 
+                  className="w-full h-full object-contain bg-white/5 group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute top-4 left-4">
                 <div className="bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
@@ -37,17 +38,17 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="p-8">
+            <div className="p-6 lg:p-8">
               <div className="flex items-center space-x-3 rtl:space-x-reverse mb-4">
-                <Shield className="w-8 h-8 text-primary" />
-                <h3 className="text-2xl font-bold text-foreground">{t('najeen.title')}</h3>
+                <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-primary flex-shrink-0" />
+                <h3 className="text-xl lg:text-2xl font-bold text-foreground">{t('najeen.title')}</h3>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base">
                 {t('najeen.description')}
               </p>
               
               <Link to="/najeen">
-                <Button className="w-full">
+                <Button className="w-full text-sm lg:text-base">
                   {t('services.explore')} {t('najeen.title')}
                 </Button>
               </Link>
@@ -56,12 +57,14 @@ const Services = () => {
 
           {/* SDOOD Services */}
           <Card id="sdood" className="overflow-hidden group">
-            <div className="aspect-video relative overflow-hidden">
-              <img 
-                src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/s.png" 
-                alt="SDOOD Construction Services" 
-                className="w-full h-48 md:h-56 lg:h-64 object-contain bg-white/5 group-hover:scale-105 transition-transform duration-300"
-              />
+            <div className="relative overflow-hidden">
+              <div className="aspect-[4/3] w-full">
+                <img 
+                  src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/s.png" 
+                  alt="SDOOD Construction Services" 
+                  className="w-full h-full object-contain bg-white/5 group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute top-4 left-4">
                 <div className="bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
@@ -69,17 +72,17 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="p-8">
+            <div className="p-6 lg:p-8">
               <div className="flex items-center space-x-3 rtl:space-x-reverse mb-4">
-                <DoorOpen className="w-8 h-8 text-primary" />
-                <h3 className="text-2xl font-bold text-foreground">{t('sdood.title')}</h3>
+                <DoorOpen className="w-6 h-6 sm:w-8 sm:h-8 text-primary flex-shrink-0" />
+                <h3 className="text-xl lg:text-2xl font-bold text-foreground">{t('sdood.title')}</h3>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base">
                 {t('sdood.description')}
               </p>
 
               <Link to="/sdood">
-                <Button className="w-full">
+                <Button className="w-full text-sm lg:text-base">
                   {t('services.explore')} {t('sdood.title')}
                 </Button>
               </Link>
@@ -88,12 +91,14 @@ const Services = () => {
 
           {/* RAMMAZ Services */}
           <Card id="rammaz" className="overflow-hidden group">
-            <div className="aspect-video relative overflow-hidden">
-              <img 
-                src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/r.png" 
-                alt="RAMMAZ Digital Services" 
-                className="w-full h-48 md:h-56 lg:h-64 object-contain bg-white/5 group-hover:scale-105 transition-transform duration-300"
-              />
+            <div className="relative overflow-hidden">
+              <div className="aspect-[4/3] w-full">
+                <img 
+                  src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/r.png" 
+                  alt="RAMMAZ Digital Services" 
+                  className="w-full h-full object-contain bg-white/5 group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute top-4 left-4">
                 <div className="bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
@@ -101,17 +106,17 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="p-8">
+            <div className="p-6 lg:p-8">
               <div className="flex items-center space-x-3 rtl:space-x-reverse mb-4">
-                <Monitor className="w-8 h-8 text-primary" />
-                <h3 className="text-2xl font-bold text-foreground">{t('rammaz.title')}</h3>
+                <Monitor className="w-6 h-6 sm:w-8 sm:h-8 text-primary flex-shrink-0" />
+                <h3 className="text-xl lg:text-2xl font-bold text-foreground">{t('rammaz.title')}</h3>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed text-sm lg:text-base">
                 {t('rammaz.description')}
               </p>
 
               <Link to="/rammaz">
-                <Button className="w-full">
+                <Button className="w-full text-sm lg:text-base">
                   {t('services.explore')} {t('rammaz.title')}
                 </Button>
               </Link>

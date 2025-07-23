@@ -85,7 +85,7 @@ const Rammaz = () => {
             <div className="w-24 h-1 bg-primary mx-auto"></div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
             {services.map((service, index) => (
               <Card key={index} className="p-4 sm:p-6 text-center hover:shadow-lg transition-shadow">
                 <div className="bg-primary/10 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">

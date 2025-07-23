@@ -62,12 +62,14 @@ const Rammaz = () => {
                 </Link>
               </div>
             </div>
-            <div className="order-1 lg:order-2 flex justify-center items-center h-[300px] lg:h-[350px]">
-              <img 
-                src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/r.png" 
-                alt="RAMMAZ Digital Solutions" 
-                className="max-w-[250px] max-h-[250px] sm:max-w-[280px] sm:max-h-[280px] md:max-w-[300px] md:max-h-[300px] lg:max-w-[320px] lg:max-h-[320px] object-contain"
-              />
+            <div className="order-1 lg:order-2 flex justify-center items-center h-[320px] lg:h-[380px]">
+              <div className="flex justify-center items-center w-full h-full p-4">
+                <img 
+                  src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/r.png" 
+                  alt="RAMMAZ Digital Solutions" 
+                  className="max-w-[300px] max-h-[300px] sm:max-w-[340px] sm:max-h-[340px] md:max-w-[380px] md:max-h-[380px] lg:max-w-[400px] lg:max-h-[400px] object-contain transition-all duration-300 hover:scale-105 shadow-sm"
+                />
+              </div>
             </div>
           </div>
         </div>

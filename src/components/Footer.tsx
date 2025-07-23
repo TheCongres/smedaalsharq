@@ -14,9 +14,9 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex flex-col items-start mb-4">
-              <div className="bg-white rounded-lg p-1 shadow-md hover:shadow-lg transition-shadow">
+              <div className="rounded-lg p-1 shadow-md hover:shadow-lg transition-shadow">
                 <img 
-                  src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/fin.png" 
+                  src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/footer.png" 
                   alt={t('company.name')} 
                   className="h-28 w-auto max-w-[400px]" 
                 />

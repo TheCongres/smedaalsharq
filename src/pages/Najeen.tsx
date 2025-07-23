@@ -62,11 +62,11 @@ const Najeen = () => {
                 </Link>
               </div>
             </div>
-            <div className="order-1 lg:order-2 flex justify-center">
+            <div className="order-1 lg:order-2 flex justify-center items-center h-[300px] lg:h-[350px]">
               <img 
                 src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/n.png" 
                 alt="NAJEEN Safety Solutions" 
-                className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain"
+                className="max-w-[250px] max-h-[250px] sm:max-w-[280px] sm:max-h-[280px] md:max-w-[300px] md:max-h-[300px] lg:max-w-[320px] lg:max-h-[320px] object-contain"
               />
             </div>
           </div>

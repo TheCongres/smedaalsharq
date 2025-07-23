@@ -27,9 +27,9 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/" className="p-2">
               <img 
-                src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/fin.png" 
+                src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/all.png" 
                 alt={t('company.name')} 
-                className="h-20 w-auto max-w-80 sm:h-28 sm:max-w-[400px]" 
+                className="h-16 w-auto max-w-60 sm:h-20 sm:max-w-80 md:h-24 md:max-w-96 lg:h-28 lg:max-w-[400px]" 
               />
             </Link>
           </div>

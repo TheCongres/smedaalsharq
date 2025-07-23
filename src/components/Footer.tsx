@@ -16,9 +16,9 @@ const Footer = () => {
             <div className="flex flex-col items-start mb-4">
               <div className="rounded-lg p-1 shadow-md hover:shadow-lg transition-shadow">
                 <img 
-                  src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/footer.png" 
+                  src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/all.png" 
                   alt={t('company.name')} 
-                  className="h-28 w-auto max-w-[400px]" 
+                  className="h-20 w-auto max-w-60 sm:h-24 sm:max-w-80 md:h-28 md:max-w-[400px]" 
                 />
               </div>
             </div>

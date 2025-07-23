@@ -29,7 +29,7 @@ const Header = () => {
               <img 
                 src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/fin.png" 
                 alt={t('company.name')} 
-                className="h-8 w-auto max-w-32 sm:h-10 sm:max-w-40" 
+                className="h-12 w-auto max-w-48 sm:h-14 sm:max-w-56" 
               />
             </Link>
           </div>

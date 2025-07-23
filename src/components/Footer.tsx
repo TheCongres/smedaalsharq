@@ -18,7 +18,7 @@ const Footer = () => {
                 <img 
                   src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/fin.png" 
                   alt={t('company.name')} 
-                  className="h-10 w-auto max-w-48" 
+                  className="h-14 w-auto max-w-64" 
                 />
               </div>
             </div>

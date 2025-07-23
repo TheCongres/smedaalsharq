@@ -24,9 +24,9 @@ const translations = {
     'company.subtitle': 'Trading Establishment',
 
     // Hero
-    'hero.description': 'An organization interested in creativity and excellence in ideas and systems, providing innovative, practical and high-quality products.',
-    'hero.exploreServices': 'Our Services',
-    'hero.learnMore': 'Learn More',
+    'hero.description': 'Leading provider of construction, safety, and digital solutions in Saudi Arabia\'s Eastern Province. We deliver innovative, practical, and high-quality products with over 15 years of experience.',
+    'hero.exploreServices': 'Explore Our Services',
+    'hero.learnMore': 'Learn More About Us',
 
     // Location & Contact Info
     'contact.location': 'Saudi Arabia, Eastern Province',
@@ -38,7 +38,7 @@ const translations = {
     // Services
     'sdood.title': 'SDOOD',
     'sdood.description': 'We provide construction and renovation services, along with high-quality building tools and equipment, led by a team of skilled engineers to ensure professional and safe execution.',
-    'sdood.category': 'Construction & Building',
+    'sdood.category': 'Construction & Building Solutions',
     'sdood.fullDescription': 'SDOOD specializes in providing comprehensive construction and renovation services. Our experienced team of engineers and craftsmen ensures that every project meets the highest standards of quality and safety.',
     'sdood.services.title': 'Our Construction Services',
     'sdood.services.construction': 'General Construction',
@@ -50,12 +50,12 @@ const translations = {
     'sdood.services.consultation': 'Engineering Consultation',
     'sdood.services.consultation.description': 'Expert engineering consultation and project planning',
     'sdood.cta.title': 'Ready to Build Your Dream Project?',
-    'sdood.cta.description': 'Contact our construction experts today to discuss your building needs and get a detailed project proposal.',
-    'sdood.cta.button': 'Start Your Project',
+    'sdood.cta.description': 'Contact our certified construction experts today for a FREE consultation and detailed project proposal. Book your appointment now!',
+    'sdood.cta.button': 'Get Free Consultation',
 
     'najeen.title': 'NAJEEN', 
     'najeen.description': 'We offer safety tools, industrial solutions, and consultancy and training services, powered by an innovative team developing smart solutions to protect work environments.',
-    'najeen.category': 'Industrial Safety',
+    'najeen.category': 'Industrial Safety Solutions',
     'najeen.fullDescription': 'NAJEEN is dedicated to creating safer work environments through innovative safety solutions and comprehensive training programs. Our team develops smart tools and systems to protect workers across various industries.',
     'najeen.services.title': 'Our Safety Services',
     'najeen.services.safety': 'Safety Equipment & Tools',
@@ -66,13 +66,13 @@ const translations = {
     'najeen.services.assessment.description': 'Professional risk assessment and safety auditing services',
     'najeen.services.consultation': 'Industrial Safety Consultation',
     'najeen.services.consultation.description': 'Expert consultation for industrial safety system implementation',
-    'najeen.cta.title': 'Ready to Enhance Your Workplace Safety?',
-    'najeen.cta.description': 'Contact our safety experts today to discuss your industrial safety needs and get a customized solution.',
-    'najeen.cta.button': 'Get Started Today',
+    'najeen.cta.title': 'Secure Your Workplace Safety Today',
+    'najeen.cta.description': 'Contact our certified safety experts for a FREE workplace assessment and customized safety solution. Schedule your consultation now!',
+    'najeen.cta.button': 'Book Free Assessment',
 
     'rammaz.title': 'RAMMAZ',
     'rammaz.description': 'We develop websites and smart applications, delivering innovative digital solutions that support digital transformation and contribute to business growth, powered by a creative team of developers and designers.',
-    'rammaz.category': 'Digital Solutions',
+    'rammaz.category': 'Digital Solutions & Development',
     'rammaz.fullDescription': 'RAMMAZ transforms businesses through innovative digital solutions. Our creative team of developers and designers creates websites, mobile applications, and digital platforms that drive growth and enhance user experiences.',
     'rammaz.services.title': 'Our Digital Services',
     'rammaz.services.web': 'Website Development',
@@ -83,9 +83,9 @@ const translations = {
     'rammaz.services.systems.description': 'Custom business systems and enterprise solutions',
     'rammaz.services.consultation': 'Digital Transformation Consultation',
     'rammaz.services.consultation.description': 'Strategic digital transformation consulting',
-    'rammaz.cta.title': 'Ready to Transform Your Business Digitally?',
-    'rammaz.cta.description': 'Contact our digital experts today to discuss your technology needs and create innovative solutions that drive growth.',
-    'rammaz.cta.button': 'Start Your Digital Journey',
+    'rammaz.cta.title': 'Transform Your Business Digitally Today',
+    'rammaz.cta.description': 'Contact our digital transformation experts for a FREE strategy session and custom development quote. Start your digital journey now!',
+    'rammaz.cta.button': 'Get Free Strategy Session',
 
     // About
     'about.title': 'About Us',
@@ -112,9 +112,12 @@ const translations = {
     'about.values.integrityText': 'Building lasting relationships through trust and transparency.',
 
     // Services Section
-    'services.title': 'Our Services',
-    'services.subtitle': 'Design with Excellence - Comprehensive solutions for industrial and commercial needs',
-    'services.explore': 'Explore Services',
+    'services.title': 'Our Specialized Services',
+    'services.subtitle': 'Excellence in Construction, Safety & Digital Solutions - Comprehensive services for Eastern Province businesses with 15+ years of proven expertise',
+    'services.explore': 'Explore',
+    'services.stats.experience': '15+ Years Experience',
+    'services.stats.projects': '500+ Successful Projects',
+    'services.stats.clients': '200+ Satisfied Clients',
 
     // Contact
     'contact.title': 'Contact Us',
@@ -170,9 +173,9 @@ const translations = {
     'company.subtitle': 'مؤسسة تجارية',
 
     // Hero
-    'hero.description': 'مؤسسة مهتمة بالإبداع والتميز في الأفكار والأنظمة، وتقديم منتجات مبتكرة وعملية وعالية الجودة.',
-    'hero.exploreServices': 'خدماتنا',
-    'hero.learnMore': 'اعرف المزيد',
+    'hero.description': 'المزود الرائد لحلول البناء والسلامة والرقمية في المنطقة الشرقية بالمملكة العربية السعودية. نقدم منتجات مبتكرة وعملية وعالية الجودة بخبرة تزيد عن 15 عاماً.',
+    'hero.exploreServices': 'استكشف خدماتنا',
+    'hero.learnMore': 'تعرف علينا أكثر',
 
     // Location & Contact Info
     'contact.location': 'المملكة العربية السعودية، المنطقة الشرقية',
@@ -184,7 +187,7 @@ const translations = {
     // Services
     'sdood.title': 'سدود',
     'sdood.description': 'نقدم خدمات البناء والترميم، وبيع أدوات ومعدات البناء بجودة عالية، بقيادة فريق من المهندسين المتميزين لضمان تنفيذ احترافي وآمن.',
-    'sdood.category': 'البناء والتشييد',
+    'sdood.category': 'حلول البناء والتشييد',
     'sdood.fullDescription': 'سدود متخصصة في تقديم خدمات البناء والترميم الشاملة. فريقنا المتمرس من المهندسين والحرفيين يضمن أن كل مشروع يلبي أعلى معايير الجودة والسلامة.',
     'sdood.services.title': 'خدمات البناء لدينا',
     'sdood.services.construction': 'البناء العام',
@@ -196,12 +199,12 @@ const translations = {
     'sdood.services.consultation': 'الاستشارات الهندسية',
     'sdood.services.consultation.description': 'استشارات هندسية خبيرة وتخطيط المشاريع',
     'sdood.cta.title': 'مستعد لبناء مشروع أحلامك؟',
-    'sdood.cta.description': 'تواصل مع خبراء البناء لدينا اليوم لمناقشة احتياجات البناء الخاصة بك والحصول على اقتراح مشروع مفصل.',
-    'sdood.cta.button': 'ابدأ مشروعك',
+    'sdood.cta.description': 'تواصل مع خبراء البناء المعتمدين اليوم للحصول على استشارة مجانية واقتراح مشروع مفصل. احجز موعدك الآن!',
+    'sdood.cta.button': 'احصل على استشارة مجانية',
 
     'najeen.title': 'ناجين',
     'najeen.description': 'نوفر أدوات السلامة، وحلول المصانع، وخدمات الاستشارات والتدريب، من خلال فريق ابتكاري يطور حلولًا ذكية لحماية بيئات العمل.',
-    'najeen.category': 'السلامة الصناعية',
+    'najeen.category': 'حلول السلامة الصناعية',
     'najeen.fullDescription': 'ناجين مكرسة لإنشاء بيئات عمل أكثر أماناً من خلال حلول السلامة المبتكرة وبرامج التدريب الشاملة. فريقنا يطور أدوات وأنظمة ذكية لحماية العمال عبر مختلف الصناعات.',
     'najeen.services.title': 'خدمات السلامة لدينا',
     'najeen.services.safety': 'معدات وأدوات السلامة',
@@ -212,13 +215,13 @@ const translations = {
     'najeen.services.assessment.description': 'خدمات تقييم المخاطر المهنية ومراجعة السلامة',
     'najeen.services.consultation': 'استشارات السلامة الصناعية',
     'najeen.services.consultation.description': 'استشارات خبيرة لتنفيذ أنظمة السلامة الصناعية',
-    'najeen.cta.title': 'مستعد لتعزيز سلامة مكان العمل؟',
-    'najeen.cta.description': 'تواصل مع خبراء السلامة لدينا اليوم لمناقشة احتياجات السلامة الصناعية والحصول على حل مخصص.',
-    'najeen.cta.button': 'ابدأ اليوم',
+    'najeen.cta.title': 'أمّن سلامة مكان عملك اليوم',
+    'najeen.cta.description': 'تواصل مع خبراء السلامة المعتمدين للحصول على تقييم مجاني لمكان العمل وحل سلامة مخصص. احجز استشارتك الآن!',
+    'najeen.cta.button': 'احجز تقييماً مجانياً',
 
     'rammaz.title': 'رماز',
     'rammaz.description': 'نطور المواقع الإلكترونية والتطبيقات الذكية، ونقدم حلولًا رقمية مبتكرة تدعم التحول الرقمي وتسهم في نمو الأعمال، عبر فريق مبدع من المبرمجين والمصممين.',
-    'rammaz.category': 'الحلول الرقمية',
+    'rammaz.category': 'الحلول الرقمية والتطوير',
     'rammaz.fullDescription': 'رماز تحول الأعمال من خلال الحلول الرقمية المبتكرة. فريقنا المبدع من المطورين والمصممين ينشئ مواقع الويب وتطبيقات الجوال والمنصات الرقمية التي تدفع النمو وتحسن تجارب المستخدمين.',
     'rammaz.services.title': 'خدماتنا الرقمية',
     'rammaz.services.web': 'تطوير المواقع الإلكترونية',
@@ -229,9 +232,9 @@ const translations = {
     'rammaz.services.systems.description': 'أنظمة أعمال مخصصة وحلول المؤسسات',
     'rammaz.services.consultation': 'استشارات التحول الرقمي',
     'rammaz.services.consultation.description': 'استشارات استراتيجية للتحول الرقمي',
-    'rammaz.cta.title': 'مستعد لتحويل عملك رقمياً؟',
-    'rammaz.cta.description': 'تواصل مع خبرائنا الرقميين اليوم لمناقشة احتياجاتك التقنية وإنشاء حلول مبتكرة تدفع النمو.',
-    'rammaz.cta.button': 'ابدأ رحلتك الرقمية',
+    'rammaz.cta.title': 'حوّل عملك رقمياً اليوم',
+    'rammaz.cta.description': 'تواصل مع خبراء التحول الرقمي للحصول على جلسة استراتيجية مجانية وعرض سعر مخصص للتطوير. ابدأ رحلتك الرقمية الآن!',
+    'rammaz.cta.button': 'احصل على جلسة استراتيجية مجانية',
 
     // About
     'about.title': 'من نحن',
@@ -258,9 +261,12 @@ const translations = {
     'about.values.integrityText': 'بناء علاقات دائمة من خلال الثقة والشفافية.',
 
     // Services Section
-    'services.title': 'خدماتنا',
-    'services.subtitle': 'تصميم بامتياز - حلول شاملة للاحتياجات الصناعية والتجارية',
-    'services.explore': 'استكشف الخدمات',
+    'services.title': 'خدماتنا المتخصصة',
+    'services.subtitle': 'التميز في حلول البناء والسلامة والرقمية - خدمات شاملة لشركات المنطقة الشرقية بخبرة تزيد عن 15 عاماً',
+    'services.explore': 'استكشف',
+    'services.stats.experience': 'خبرة أكثر من 15 عاماً',
+    'services.stats.projects': 'أكثر من 500 مشروع ناجح',
+    'services.stats.clients': 'أكثر من 200 عميل راضٍ',
 
     // Contact
     'contact.title': 'اتصل بنا',

@@ -1,4 +1,5 @@
 
+import { useState } from "react";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
@@ -8,9 +9,81 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
+
+interface ContactFormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  service: string;
+  message: string;
+}
 
 const Contact = () => {
   const { t } = useLanguage();
+  const { toast } = useToast();
+  const [formData, setFormData] = useState<ContactFormData>({
+    firstName: '',
+    lastName: '',
+    email: '',
+    service: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleInputChange = (field: keyof ContactFormData, value: string) => {
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
+      toast({
+        title: "خطأ",
+        description: "يرجى ملء جميع الحقول المطلوبة",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "تم إرسال الرسالة بنجاح",
+        description: "شكراً لتواصلك معنا. سنقوم بالرد عليك في أقرب وقت ممكن.",
+      });
+
+      // Reset form
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        service: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "خطأ في إرسال الرسالة",
+        description: "حدث خطأ أثناء إرسال رسالتك. يرجى المحاولة مرة أخرى.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="min-h-screen">
@@ -71,9 +144,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">{t('contact.email')}</h3>
-                    <p className="text-muted-foreground">
-                      info@smedaalsharq.com
-                    </p>
+                     <p className="text-muted-foreground">
+                       mushabab.ceo@smedaalsharq.com
+                     </p>
                   </div>
                 </div>
 
@@ -101,19 +174,29 @@ const Contact = () => {
               <h2 className="text-xl font-semibold text-foreground mb-6">
                 {t('contact.sendMessage')}
               </h2>
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
                       {t('contact.firstName')}
                     </label>
-                    <Input placeholder={t('contact.firstName')} />
+                    <Input 
+                      placeholder={t('contact.firstName')}
+                      value={formData.firstName}
+                      onChange={(e) => handleInputChange('firstName', e.target.value)}
+                      required
+                    />
                   </div>
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
                       {t('contact.lastName')}
                     </label>
-                    <Input placeholder={t('contact.lastName')} />
+                    <Input 
+                      placeholder={t('contact.lastName')}
+                      value={formData.lastName}
+                      onChange={(e) => handleInputChange('lastName', e.target.value)}
+                      required
+                    />
                   </div>
                 </div>
 
@@ -121,14 +204,20 @@ const Contact = () => {
                   <label className="text-sm font-medium text-foreground mb-2 block">
                     {t('contact.email')}
                   </label>
-                  <Input type="email" placeholder="your@email.com" />
+                  <Input 
+                    type="email" 
+                    placeholder="your@email.com"
+                    value={formData.email}
+                    onChange={(e) => handleInputChange('email', e.target.value)}
+                    required
+                  />
                 </div>
 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
                     {t('contact.serviceInterest')}
                   </label>
-                  <Select>
+                  <Select value={formData.service} onValueChange={(value) => handleInputChange('service', value)}>
                     <SelectTrigger>
                       <SelectValue placeholder={t('contact.selectService')} />
                     </SelectTrigger>
@@ -149,11 +238,14 @@ const Contact = () => {
                   <Textarea 
                     placeholder={t('contact.messagePlaceholder')}
                     rows={5}
+                    value={formData.message}
+                    onChange={(e) => handleInputChange('message', e.target.value)}
+                    required
                   />
                 </div>
 
-                <Button className="w-full">
-                  {t('contact.submit')}
+                <Button type="submit" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? "جاري الإرسال..." : t('contact.submit')}
                 </Button>
               </form>
             </Card>

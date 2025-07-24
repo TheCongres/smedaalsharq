@@ -2,11 +2,79 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Loader2 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useState } from 'react';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
   const { t } = useLanguage();
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    serviceInterest: '',
+    message: ''
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Basic validation
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
+      toast({
+        title: "Error",
+        description: "Please fill in all required fields.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Success!",
+        description: "Your message has been sent successfully. We'll get back to you soon!",
+      });
+
+      // Reset form
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        serviceInterest: '',
+        message: ''
+      });
+
+    } catch (error: any) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section id="contact" className="py-20 px-4 bg-muted/30">
@@ -95,54 +163,90 @@ const Contact = () => {
             <h3 className="text-xl font-semibold text-foreground mb-6">
               {t('contact.sendMessage')}
             </h3>
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
-                    {t('contact.firstName')}
+                    {t('contact.firstName')} *
                   </label>
-                  <Input placeholder={t('contact.firstName')} />
+                  <Input 
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleInputChange}
+                    placeholder={t('contact.firstName')}
+                    required
+                  />
                 </div>
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
-                    {t('contact.lastName')}
+                    {t('contact.lastName')} *
                   </label>
-                  <Input placeholder={t('contact.lastName')} />
+                  <Input 
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleInputChange}
+                    placeholder={t('contact.lastName')}
+                    required
+                  />
                 </div>
               </div>
 
               <div>
                 <label className="text-sm font-medium text-foreground mb-2 block">
-                  {t('contact.email')}
+                  {t('contact.email')} *
                 </label>
-                <Input type="email" placeholder="your@email.com" />
+                <Input 
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="your@email.com"
+                  required
+                />
               </div>
 
               <div>
                 <label className="text-sm font-medium text-foreground mb-2 block">
                   {t('contact.serviceInterest')}
                 </label>
-                <select className="w-full px-3 py-2 border border-input bg-background rounded-md focus:outline-none focus:ring-2 focus:ring-ring">
+                <select 
+                  name="serviceInterest"
+                  value={formData.serviceInterest}
+                  onChange={handleInputChange}
+                  className="w-full px-3 py-2 border border-input bg-background rounded-md focus:outline-none focus:ring-2 focus:ring-ring"
+                >
                   <option value="">Select a service</option>
                   <option value="najeen">NAJEEN - Safety Solutions</option>
                   <option value="sdood">SDOOD - Doors & Security</option>
-                  <option value="both">Both Services</option>
+                  <option value="rammaz">RAMMAZ - Services</option>
+                  <option value="both">Multiple Services</option>
                   <option value="other">Other</option>
                 </select>
               </div>
 
               <div>
                 <label className="text-sm font-medium text-foreground mb-2 block">
-                  {t('contact.message')}
+                  {t('contact.message')} *
                 </label>
                 <Textarea 
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                   placeholder={t('contact.messagePlaceholder')}
                   rows={5}
+                  required
                 />
               </div>
 
-              <Button className="w-full">
-                {t('contact.submit')}
+              <Button type="submit" className="w-full" disabled={isSubmitting}>
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                    Sending...
+                  </>
+                ) : (
+                  t('contact.submit')
+                )}
               </Button>
             </form>
           </Card>

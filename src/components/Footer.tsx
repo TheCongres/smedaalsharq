@@ -1,34 +1,27 @@
-
-
 import { Separator } from '@/components/ui/separator';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link } from 'react-router-dom';
-
 const Footer = () => {
-  const { t } = useLanguage();
-
-  return (
-    <footer className="bg-footer text-footer-foreground">
+  const {
+    t
+  } = useLanguage();
+  return <footer className="bg-footer text-footer-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex flex-col items-start mb-4">
               <div className="rounded-lg px-1 border border-footer-foreground/10 hover:border-footer-foreground/20 bg-white transition-all duration-300">
-                <img 
-                  src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/hh.png" 
-                  alt={t('company.name')} 
-                  className="h-20 w-auto max-w-60 sm:h-22 sm:max-w-76 md:h-22 md:max-w-88 lg:h-24 lg:max-w-[400px] transition-all duration-300 hover:scale-102" 
-                />
+                <img src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/hh.png" alt={t('company.name')} className="h-20 w-auto max-w-60 sm:h-22 sm:max-w-76 md:h-22 md:max-w-88 lg:h-24 lg:max-w-[400px] transition-all duration-300 hover:scale-102" />
               </div>
             </div>
-            <p className="text-sm opacity-80 leading-relaxed mb-4">
+            <p className="text-sm opacity-80 leading-relaxed mb-4 px-[53px] mx-[70px]">
               {t('footer.description')}
             </p>
           </div>
 
           {/* Services */}
-          <div>
+          <div className="mx-[46px]">
             <h4 className="font-semibold text-lg mb-4">{t('footer.services')}</h4>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
@@ -63,12 +56,10 @@ const Footer = () => {
               <p>{t('contact.email')}: {t('contact.emailAddress')}</p>
               <p>
                 {t('footer.businessHours')}<br />
-                {t('contact.hoursText').split('\n').map((line, index) => (
-                  <span key={index}>
+                {t('contact.hoursText').split('\n').map((line, index) => <span key={index}>
                     {line}
                     {index === 0 && <br />}
-                  </span>
-                ))}
+                  </span>)}
               </p>
             </div>
           </div>
@@ -84,9 +75,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
-

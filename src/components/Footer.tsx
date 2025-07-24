@@ -10,14 +10,14 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex flex-col items-start mb-4">
-              <div className="rounded-lg px-1 border border-footer-foreground/10 hover:border-footer-foreground/20 bg-white transition-all duration-300">
+            <div className="flex flex-col sm:flex-row items-start gap-4 mb-4">
+              <div className="rounded-lg px-1 border border-footer-foreground/10 hover:border-footer-foreground/20 bg-white transition-all duration-300 flex-shrink-0">
                 <img src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/hh.png" alt={t('company.name')} className="h-20 w-auto max-w-60 sm:h-22 sm:max-w-76 md:h-22 md:max-w-88 lg:h-24 lg:max-w-[400px] transition-all duration-300 hover:scale-102" />
               </div>
+              <p className="text-sm opacity-80 leading-relaxed">
+                {t('footer.description')}
+              </p>
             </div>
-            <p className="text-sm opacity-80 leading-relaxed mb-4 px-[53px] mx-[70px]">
-              {t('footer.description')}
-            </p>
           </div>
 
           {/* Services */}

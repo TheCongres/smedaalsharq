@@ -122,8 +122,11 @@ const Contact = () => {
   <div>
     <h4 className="font-semibold text-foreground mb-1">{t('contact.phone')}</h4>
     <p className="text-muted-foreground">
-      +966 XX XXX XXXX
-    </p>
+  {/* Force LTR display using Unicode markers */}
+  <span>
+    {'\u202A'}+966 54 910 5511{'\u202C'}
+  </span>
+</p>
   </div>
 </div>
 

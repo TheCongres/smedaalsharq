@@ -133,7 +133,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">{t('contact.phone')}</h3>
                     <p className="text-muted-foreground">
-                      +966 XX XXX XXXX
+                      +966 54 910 5511
                     </p>
                   </div>
                 </div>

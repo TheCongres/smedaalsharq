@@ -115,17 +115,20 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="bg-primary/10 p-3 rounded-lg">
-                  <Phone className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-1">{t('contact.phone')}</h4>
-                  <p className="text-muted-foreground">
-                    +966 XX XXX XXXX
-                  </p>
-                </div>
+             <div className="flex items-start space-x-4 rtl:space-x-reverse">
+              <div className="bg-primary/10 p-3 rounded-lg">
+                <Phone className="w-6 h-6 text-primary" />
               </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">{t('contact.phone')}</h4>
+                <p className="text-muted-foreground">
+                  <span dir="ltr" style={{ unicodeBidi: 'isolate' }}>
+                    +966 54 910 5511
+                  </span>
+                </p>
+              </div>
+            </div>
+
 
               <div className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-lg">
@@ -134,7 +137,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">{t('contact.email')}</h4>
                   <p className="text-muted-foreground">
-                    info@smedaalsharq.com
+                    mushabab.ceo@smedaalsharq.com
                   </p>
                 </div>
               </div>

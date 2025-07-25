@@ -29,7 +29,7 @@ const Header = () => {
               <img 
                 src="https://raw.githubusercontent.com/TheCongres/imgs-for-smedaa/main/hh.png" 
                 alt={t('company.name')} 
-                className="h-20 w-auto max-w-60 sm:h-16 sm:max-w-64 md:h-26 md:max-w-96 lg:h-28 lg:max-w-[400px] transition-all duration-300 group-hover:scale-105 drop-shadow-lg group-hover:drop-shadow-xl"
+                className="h-20 max-w-64 sm:h-24 sm:max-w-80 md:h-28 md:max-w-[400px] lg:h-32 lg:max-w-[500px] transition-all duration-300 group-hover:scale-105 drop-shadow-lg group-hover:drop-shadow-xl" 
  
               />
             </Link>

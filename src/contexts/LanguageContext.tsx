@@ -178,7 +178,7 @@ const translations = {
     'contact.location': 'المملكة العربية السعودية، المنطقة الشرقية',
     'contact.country': 'المملكة العربية السعودية',
     'contact.region': 'المنطقة الشرقية',
-    "contact.phoneNumber": "\u200E+966 54 910 5511",
+    "contact.phoneNumber": "١١٥٥ ٠١٩ ٤٥ ٦٦٩+",
     'contact.emailAddress': 'mushabab.ceo@smedaalsharq.com', 
 
     // Services

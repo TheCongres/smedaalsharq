@@ -52,7 +52,13 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-4">{t('footer.contactInfo')}</h4>
             <div className="space-y-2 text-sm opacity-80">
               <p>{t('contact.location')}</p>
-              <p>{t('contact.phone')}: {t('contact.phoneNumber')}</p>
+              <p>
+              {t('contact.phone')}: 
+              <span dir="ltr" style={{ unicodeBidi: 'isolate', marginInlineStart: '4px' }}>
+                {t('contact.phoneNumber')}
+              </span>
+              </p>
+
               <p>{t('contact.email')}: {t('contact.emailAddress')}</p>
               <p>
                 {t('footer.businessHours')}<br />

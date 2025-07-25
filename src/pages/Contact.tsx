@@ -132,9 +132,14 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">{t('contact.phone')}</h3>
-                    <p className="text-muted-foreground">
+{/*                     <p className="text-muted-foreground">
                       +966 54 910 5511
-                    </p>
+                    </p> */}
+                    <p className="text-muted-foreground">
+  <span dir="ltr" style={{ unicodeBidi: 'embed' }}>
+    +966 54 910 5511
+  </span>
+</p>
                   </div>
                 </div>
 

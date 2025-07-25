@@ -322,26 +322,8 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 //   );
 // };
 
-const t = (key: string): string | JSX.Element => {
-  const value = translations[language][key as keyof typeof translations['en']] || key;
 
-  // Simple logic to detect phone numbers or LTR-only content
-  const isLTRContent = /^[\d\s()+-]+$/.test(value);
 
-  if (isLTRContent) {
-    return <span style={{ direction: 'ltr', unicodeBidi: 'embed' }}>{value}</span>;
-  }
-
-  return value;
-};
-
-return (
-  <LanguageContext.Provider value={{ language, setLanguage, t }}>
-    <div className={language === 'ar' ? 'rtl' : 'ltr'} dir={language === 'ar' ? 'rtl' : 'ltr'}>
-      {children}
-    </div>
-  </LanguageContext.Provider>
-);
 
   
   // 

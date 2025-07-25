@@ -124,12 +124,19 @@ const Contact = () => {
       {t('contact.phone')}
     </h4>
     <p className="text-muted-foreground">
-      <span className="ltr:text-left rtl:text-left" dir="ltr">
-        &#x202A;+966 54 910 5511&#x202C;
+      <span
+        style={{
+          direction: 'ltr',
+          unicodeBidi: 'bidi-override',
+          display: 'inline-block',
+        }}
+      >
+        +966 54 910 5511
       </span>
     </p>
   </div>
 </div>
+
 
 
               <div className="flex items-start space-x-4">

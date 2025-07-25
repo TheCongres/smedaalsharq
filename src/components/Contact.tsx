@@ -115,27 +115,19 @@ const Contact = () => {
                 </div>
               </div>
 
-            <div className="flex items-start space-x-4 rtl:space-x-reverse">
+            <div className="flex items-start space-x-4">
   <div className="bg-primary/10 p-3 rounded-lg">
     <Phone className="w-6 h-6 text-primary" />
   </div>
   <div>
-    <h4 className="font-semibold text-foreground mb-1">
-      {t('contact.phone')}
-    </h4>
+    <h4 className="font-semibold text-foreground mb-1">{t('contact.phone')}</h4>
     <p className="text-muted-foreground">
-      <span
-        style={{
-          direction: 'ltr',
-          unicodeBidi: 'bidi-override',
-          display: 'inline-block',
-        }}
-      >
-        +966 54 910 5511
+      <span dir="ltr" style={{ unicodeBidi: 'isolate' }}>
+        +966 XX XXX XXXX
       </span>
-    </p>
   </div>
 </div>
+
 
 
 

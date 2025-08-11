@@ -150,7 +150,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">{t('contact.email')}</h3>
                      <p className="text-muted-foreground">
-                       mushabab.ceo@smedaalsharq.com
+                       nawal.admin@smedaalsharq.com
                      </p>
                   </div>
                 </div>

@@ -35,7 +35,7 @@ const translations = {
     'contact.country': 'Saudi Arabia',
     'contact.region': 'Eastern Province',
     'contact.phoneNumber': '+966 54 910 5511',
-    'contact.emailAddress': 'mushabab.ceo@smedaalsharq.com',
+    'contact.emailAddress': 'nawal.admin@smedaalsharq.com',
 
     // Services
     'sdood.title': 'SDOOD',
@@ -217,7 +217,7 @@ const translations = {
     'contact.country': 'المملكة العربية السعودية',
     'contact.region': 'المنطقة الشرقية',
     "contact.phoneNumber": "+966 54 910 5511 ",
-    'contact.emailAddress': 'mushabab.ceo@smedaalsharq.com', 
+    'contact.emailAddress': 'nawal.admin@smedaalsharq.com', 
 
     // Services
     'sdood.title': 'سدود',
